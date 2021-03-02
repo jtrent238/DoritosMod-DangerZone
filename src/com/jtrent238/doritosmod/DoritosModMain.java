@@ -4,6 +4,7 @@ import com.jtrent238.doritosmod.items.ItemDoritosBag;
 import com.jtrent238.doritosmod.items.ItemDoritosChip;
 
 import dangerzone.BaseMod;
+import dangerzone.Crafting;
 import dangerzone.items.Items;
 
 public class DoritosModMain extends BaseMod{
@@ -99,6 +100,9 @@ public class DoritosModMain extends BaseMod{
 			Items.registerItem(dorito_chip_dinamitachilelimon);
 			Items.registerItem(dorito_chip_wasabi);
 			Items.registerItem(dorito_chip_blaze);
+			
+			Crafting.registerCraftingRecipe(dorito_chip_nachocheese, dorito_chip_nachocheese, dorito_chip_nachocheese, dorito_chip_nachocheese, dorito_chip_nachocheese, dorito_chip_nachocheese, dorito_chip_nachocheese, dorito_chip_nachocheese, dorito_chip_nachocheese, dorito_bag_nachocheese, 1, true);
+			Crafting.registerCraftingRecipe(dorito_bag_nachocheese, null, null, null, null, null, null, null, null, dorito_chip_nachocheese, 9, false);
 		}
 		
 		//You probably won't need this routine unless you care which OTHER mods are installed.
